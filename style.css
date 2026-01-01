@@ -3,6 +3,10 @@ body {
     background-color: #000;
     margin: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 #matrix-canvas {
