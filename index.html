@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Puzzle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Word Puzzle Game</h1>
+        <div class="difficulty">
+            <label for="difficulty-select">Choose a difficulty:</label>
+            <select id="difficulty-select">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        <div id="game-area">
+            <div id="scrambled-word"></div>
+            <input type="text" id="guess-input" placeholder="Enter your guess">
+            <button id="submit-guess">Submit</button>
+            <button id="next-word">Next Word</button>
+        </div>
+        <div id="score-area">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+        <div id="message"></div>
+    </div>
+    <script src="easy.js"></script>
+    <script src="medium.js"></script>
+    <script src="hard.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
